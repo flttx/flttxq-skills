@@ -13,15 +13,10 @@
 
 - `app-store-triple-review`
 - `cross-framework-test-suite`
-- `find-skills`
 - `frontend-design`
 - `polyglot-code-review-expert`
 - `store-submission-docs-cn`
 - `ui-ux-pro-max`
-- `vercel-react-best-practices`
-- `vercel-react-native-skills`
-- `vue2`
-- `vue3`
 
 ## 目录结构
 
@@ -35,21 +30,17 @@ flttxq-skills/
 └── skills/
     ├── app-store-triple-review/
     ├── cross-framework-test-suite/
-    ├── find-skills/
     ├── frontend-design/
     ├── polyglot-code-review-expert/
     ├── store-submission-docs-cn/
-    ├── ui-ux-pro-max/
-    ├── vercel-react-best-practices/
-    ├── vercel-react-native-skills/
-    ├── vue2/
-    └── vue3/
+    └── ui-ux-pro-max/
 ```
 
 ## 首批纳入原则
 
+- 只收录自定义 skill，不收录官方、系统内建或第三方预置 skill
 - 优先纳入跨项目复用价值高的 skill
-- 优先纳入“代码审查、测试补齐、前端设计、框架实践、技能发现、应用商店文档/审核”等通用能力
+- 优先纳入“代码审查、测试补齐、前端设计、应用商店文档/审核”等通用能力
 - 暂不纳入明显项目私有的 skill，例如强依赖 SmileLinked 或特定业务目录结构的能力
 
 ## 设计原则
