@@ -3,13 +3,9 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-if command -v python3 >/dev/null 2>&1; then
-  exec python3 "$SCRIPT_DIR/scripts/install.py" "$@"
+if command -v node >/dev/null 2>&1; then
+  exec node "$SCRIPT_DIR/bin/flttxq-skills.js" "$@"
 fi
 
-if command -v python >/dev/null 2>&1 && python -c 'import sys; raise SystemExit(0 if sys.version_info[0] >= 3 else 1)' >/dev/null 2>&1; then
-  exec python "$SCRIPT_DIR/scripts/install.py" "$@"
-fi
-
-echo "未找到可用的 Python 3，请先安装 Python 3.9+。" >&2
+echo "未找到可用的 Node.js，请先安装 Node.js 18+。" >&2
 exit 1

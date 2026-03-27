@@ -13,34 +13,35 @@
 
 - `app-store-triple-review`
 - `cross-framework-test-suite`
-- `frontend-design`
 - `polyglot-code-review-expert`
 - `store-submission-docs-cn`
-- `ui-ux-pro-max`
 
 ## 目录结构
 
 ```text
 flttxq-skills/
+├── package.json
+├── bin/
+│   ├── add.js
+│   └── flttxq-skills.js
 ├── README.md
 ├── install.ps1
 ├── install.sh
 ├── scripts/
+│   ├── install.js
 │   └── install.py
 └── skills/
     ├── app-store-triple-review/
     ├── cross-framework-test-suite/
-    ├── frontend-design/
     ├── polyglot-code-review-expert/
-    ├── store-submission-docs-cn/
-    └── ui-ux-pro-max/
+    └── store-submission-docs-cn/
 ```
 
 ## 首批纳入原则
 
 - 只收录自定义 skill，不收录官方、系统内建或第三方预置 skill
 - 优先纳入跨项目复用价值高的 skill
-- 优先纳入“代码审查、测试补齐、前端设计、应用商店文档/审核”等通用能力
+- 优先纳入“代码审查、测试补齐、应用商店文档/审核”等通用能力
 - 暂不纳入明显项目私有的 skill，例如强依赖 SmileLinked 或特定业务目录结构的能力
 
 ## 设计原则
@@ -53,7 +54,48 @@ flttxq-skills/
   - 确认目标目录
 - 对不确定的第三方平台目录，安装器会提供“建议目录 + 自定义覆盖”
 
-## 安装方式
+## 运行方式
+
+### 通过 npx 交互安装
+
+```bash
+npx flttxq-skills
+```
+
+默认进入交互流程，依次选择：
+
+- 平台
+- skill
+- 目标目录
+- 是否确认安装
+
+### 通过 npx 直接安装指定 skill
+
+```bash
+npx flttxq-skills add polyglot-code-review-expert
+```
+
+也支持直接补充参数，跳过确认：
+
+```bash
+npx flttxq-skills add polyglot-code-review-expert --platform codex --yes
+```
+
+### `add` 快捷命令
+
+包内额外暴露了 `add` 这个 bin，适合在以下形式里使用：
+
+```bash
+npm exec --package flttxq-skills add polyglot-code-review-expert -- --platform codex --yes
+```
+
+说明：
+
+- 我们已经提供了 `add` 命令入口
+- 但**裸 `npx add <skill>` 是否命中本包，不由仓库本身决定，而由 npm 对包名/命令名的解析规则决定**
+- 因此，稳定可依赖的官方入口仍然建议使用 `npx flttxq-skills add <skill>`
+
+## 本地运行方式
 
 ### Windows PowerShell
 
@@ -69,10 +111,10 @@ cd /path/to/flttxq-skills
 ./install.sh
 ```
 
-### 直接运行 Python 安装器
+### 直接运行 Node 安装器
 
 ```bash
-python3 scripts/install.py
+node scripts/install.js
 ```
 
 ## 常用参数
@@ -80,37 +122,37 @@ python3 scripts/install.py
 列出支持的平台：
 
 ```bash
-python3 scripts/install.py --list-platforms
+node scripts/install.js --list-platforms
 ```
 
 列出仓库中的 skills：
 
 ```bash
-python3 scripts/install.py --list-skills
+node scripts/install.js --list-skills
 ```
 
 安装指定平台和指定 skill：
 
 ```bash
-python3 scripts/install.py --platform codex --skill polyglot-code-review-expert
+node scripts/install.js add polyglot-code-review-expert --platform codex
 ```
 
 安装全部 skills：
 
 ```bash
-python3 scripts/install.py --platform codex --all
+node scripts/install.js add --all --platform codex
 ```
 
 覆盖目标目录：
 
 ```bash
-python3 scripts/install.py --platform codex --skill polyglot-code-review-expert --target-dir C:\Users\you\.codex\skills
+node scripts/install.js add polyglot-code-review-expert --platform codex --target-dir C:\Users\you\.codex\skills
 ```
 
 非交互确认：
 
 ```bash
-python3 scripts/install.py --platform codex --skill polyglot-code-review-expert --yes
+node scripts/install.js add polyglot-code-review-expert --platform codex --yes
 ```
 
 ## 支持平台
@@ -137,12 +179,10 @@ python3 scripts/install.py --platform codex --skill polyglot-code-review-expert 
 4. 提交到仓库
 5. 通过安装器选择并安装到目标平台
 
-## 首次提交建议
+## 发布建议
 
-建议在完成首批 skill 收录后执行首次提交：
+如果后续要正式通过 `npx flttxq-skills` 分发，建议：
 
-```bash
-git init
-git add .
-git commit -m "feat: initialize flttxq skills repository"
-```
+1. 补充 npm 包发布信息
+2. 确认 `package.json.name` 与 npm 上的可用包名一致
+3. 发布后再验证一次 `npx flttxq-skills` 与 `npm exec --package flttxq-skills add ...`
