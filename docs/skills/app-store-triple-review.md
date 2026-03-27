@@ -57,6 +57,16 @@
 用 app-store-triple-review 检查华为、应用宝、Apple 三个平台的提审阻塞项，并给出最终建议。
 ```
 
+高频可复制示例：
+
+```text
+用 app-store-triple-review 只看应用宝，检查广告合规、权限申请和账号注销说明是否会影响提审。
+```
+
+```text
+用 app-store-triple-review 基于这个 Android 包和源码做一次上架前预审，输出关键操作记录、风险分级和最终建议。
+```
+
 ## 你大概会得到什么
 
 比较理想的输出通常包括：

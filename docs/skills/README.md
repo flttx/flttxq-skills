@@ -40,6 +40,7 @@
 - [cross-framework-test-suite](D:/Projects/flttxq-skills/docs/skills/cross-framework-test-suite.md)
 - [polyglot-code-review-expert](D:/Projects/flttxq-skills/docs/skills/polyglot-code-review-expert.md)
 - [store-submission-docs-cn](D:/Projects/flttxq-skills/docs/skills/store-submission-docs-cn.md)
+- [示例提示词库](D:/Projects/flttxq-skills/docs/skills/prompt-examples.md)
 
 ## 补充说明
 

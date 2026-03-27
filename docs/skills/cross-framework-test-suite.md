@@ -45,6 +45,16 @@
 用 cross-framework-test-suite 检查这个仓库现有测试规范，然后给 recording 模块补最小必要测试。
 ```
 
+高频可复制示例：
+
+```text
+用 cross-framework-test-suite 给这个 hooks 文件补单测，重点覆盖边界值、空输入和异常分支。
+```
+
+```text
+用 cross-framework-test-suite 给这个页面补集成测试，保留内部真实拼装，只 mock 网络请求和存储边界。
+```
+
 ## 你大概会得到什么
 
 常见输出包括：

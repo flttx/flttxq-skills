@@ -19,6 +19,7 @@
 技能使用说明见：
 
 - [Skills 文档总览](D:/Projects/flttxq-skills/docs/skills/README.md)
+- [示例提示词库](D:/Projects/flttxq-skills/docs/skills/prompt-examples.md)
 - [app-store-triple-review](D:/Projects/flttxq-skills/docs/skills/app-store-triple-review.md)
 - [cross-framework-test-suite](D:/Projects/flttxq-skills/docs/skills/cross-framework-test-suite.md)
 - [polyglot-code-review-expert](D:/Projects/flttxq-skills/docs/skills/polyglot-code-review-expert.md)
@@ -73,6 +74,7 @@ flttxq-skills/
 请优先阅读：
 
 - [Skills 文档总览](D:/Projects/flttxq-skills/docs/skills/README.md)
+- [示例提示词库](D:/Projects/flttxq-skills/docs/skills/prompt-examples.md)
 
 ## 设计原则
 

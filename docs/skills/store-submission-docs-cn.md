@@ -52,6 +52,16 @@
 用 store-submission-docs-cn 按 docs/release/v1.2.3 的结构整理三端提审材料。
 ```
 
+高频可复制示例：
+
+```text
+用 store-submission-docs-cn 生成这个版本的 App Store 审核备注，说明测试账号、验证码登录流程和账号注销入口。
+```
+
+```text
+用 store-submission-docs-cn 输出一版华为提审文案，包含版本亮点、权限用途和截图是否需要更新的建议。
+```
+
 ## 你大概会得到什么
 
 常见输出包括：

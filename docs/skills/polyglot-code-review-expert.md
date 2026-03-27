@@ -56,6 +56,16 @@
 用 polyglot-code-review-expert 检查这次 React Native 改动有没有首屏、导航和资源释放风险。
 ```
 
+高频可复制示例：
+
+```text
+用 polyglot-code-review-expert review 当前 PR，只关心真实 bug、行为回归和缺失验证，不要展开风格建议。
+```
+
+```text
+用 polyglot-code-review-expert 审查这次 Vue 2 改动，重点看生命周期副作用、watcher 连锁更新和表单状态同步。
+```
+
 ## 你大概会得到什么
 
 常见输出包括：
