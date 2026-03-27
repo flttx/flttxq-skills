@@ -16,6 +16,14 @@
 - `polyglot-code-review-expert`
 - `store-submission-docs-cn`
 
+技能使用说明见：
+
+- [Skills 文档总览](D:/Projects/flttxq-skills/docs/skills/README.md)
+- [app-store-triple-review](D:/Projects/flttxq-skills/docs/skills/app-store-triple-review.md)
+- [cross-framework-test-suite](D:/Projects/flttxq-skills/docs/skills/cross-framework-test-suite.md)
+- [polyglot-code-review-expert](D:/Projects/flttxq-skills/docs/skills/polyglot-code-review-expert.md)
+- [store-submission-docs-cn](D:/Projects/flttxq-skills/docs/skills/store-submission-docs-cn.md)
+
 ## 目录结构
 
 ```text
@@ -24,6 +32,13 @@ flttxq-skills/
 ├── bin/
 │   ├── add.js
 │   └── flttxq-skills.js
+├── docs/
+│   └── skills/
+│       ├── README.md
+│       ├── app-store-triple-review.md
+│       ├── cross-framework-test-suite.md
+│       ├── polyglot-code-review-expert.md
+│       └── store-submission-docs-cn.md
 ├── README.md
 ├── install.ps1
 ├── install.sh
@@ -43,6 +58,21 @@ flttxq-skills/
 - 优先纳入跨项目复用价值高的 skill
 - 优先纳入“代码审查、测试补齐、应用商店文档/审核”等通用能力
 - 暂不纳入明显项目私有的 skill，例如强依赖 SmileLinked 或特定业务目录结构的能力
+
+## 技能文档
+
+仓库里的 `skills/*/SKILL.md` 主要面向 agent 触发和执行规则。
+
+如果你是以“仓库使用者”的视角想快速了解：
+
+- 每个 skill 能干什么
+- 该怎么调用
+- 需要准备什么输入
+- 最终会产出什么
+
+请优先阅读：
+
+- [Skills 文档总览](D:/Projects/flttxq-skills/docs/skills/README.md)
 
 ## 设计原则
 

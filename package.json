@@ -8,6 +8,7 @@
   },
   "files": [
     "bin",
+    "docs",
     "install.ps1",
     "install.sh",
     "scripts",
