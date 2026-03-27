@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "app_name": "smilelinked-demo",
+    "version": "1.2.3",
+    "build": "20260314.1"
+  },
+  "operations": [
+    {
+      "step": "1",
+      "goal": "Collect iOS privacy declarations",
+      "action": "Inspect Info.plist keys",
+      "evidence": "ios/App/Info.plist",
+      "result": "PASS"
+    },
+    {
+      "step": "2",
+      "goal": "Verify account deletion entry",
+      "action": "Search UI and service endpoints",
+      "evidence": "src/views/account/*, api/account/delete",
+      "result": "PASS_WITH_QUESTIONS"
+    }
+  ],
+  "findings": [
+    {
+      "platform": "apple",
+      "severity": "P1",
+      "type": "question",
+      "title": "Account deletion path is not obvious",
+      "description": "Deletion action is under nested settings and may be hard for reviewer to locate.",
+      "evidence": "src/views/profile/settings.vue",
+      "suggestion": "Expose account deletion from top-level account page and add review note."
+    },
+    {
+      "platform": "huawei",
+      "severity": "P2",
+      "type": "optimization",
+      "title": "Permission rationale can be clearer",
+      "description": "Camera permission rationale does not mention user benefit clearly.",
+      "evidence": "android/src/main/res/values/strings.xml",
+      "suggestion": "Add explicit user value and fallback behavior in rationale text."
+    },
+    {
+      "platform": "tencent",
+      "severity": "INFO",
+      "type": "info",
+      "title": "Reviewer account provided",
+      "description": "Credentials are documented in release notes.",
+      "evidence": "docs/release/review-notes.md",
+      "suggestion": ""
+    }
+  ]
+}

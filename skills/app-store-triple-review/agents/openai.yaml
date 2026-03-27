@@ -1,0 +1,4 @@
+interface:
+  display_name: "三端应用商店审核官"
+  short_description: "按华为应用市场、应用宝、App Store 规范审查项目与构建包并汇总结论"
+  default_prompt: "请按华为应用市场、应用宝、App Store 三个平台审核规范，对我的项目和构建 App 做预审，输出关键操作记录、疑问项、优化建议和最终汇总。"

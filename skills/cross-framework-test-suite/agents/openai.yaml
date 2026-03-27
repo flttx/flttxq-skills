@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cross Framework Test Suite"
+  short_description: "Generate unit and integration tests for Vue/React/React Native."
+  default_prompt: "Use $cross-framework-test-suite to add layered unit and integration tests for this Vue/React/React Native codebase."

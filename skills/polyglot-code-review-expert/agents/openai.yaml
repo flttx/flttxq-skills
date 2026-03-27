@@ -1,0 +1,4 @@
+interface:
+  display_name: "Polyglot Code Review Expert"
+  short_description: "通用基线 + 框架专项 + 项目规范感知的跨平台代码审查"
+  default_prompt: "审查当前代码改动：先做通用基线检查，再读取项目规范文档（如 AGENTS.md、README、docs），然后根据技术栈选择 React、Vue2、Vue3、React Native、Electron、HarmonyOS 对应清单，并按当前终端平台输出高置信问题。"
