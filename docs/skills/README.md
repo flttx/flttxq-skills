@@ -2,6 +2,10 @@
 
 这份文档面向仓库使用者，而不是面向 agent 内部加载逻辑。
 
+如果你想先从整个仓库的文档导航开始看，请先看：
+
+- [文档首页](D:/Projects/flttxq-skills/docs/index.md)
+
 如果你想知道：
 
 - 每个 skill 是干什么的

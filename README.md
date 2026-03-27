@@ -18,6 +18,7 @@
 
 技能使用说明见：
 
+- [文档首页](D:/Projects/flttxq-skills/docs/index.md)
 - [Skills 文档总览](D:/Projects/flttxq-skills/docs/skills/README.md)
 - [示例提示词库](D:/Projects/flttxq-skills/docs/skills/prompt-examples.md)
 - [app-store-triple-review](D:/Projects/flttxq-skills/docs/skills/app-store-triple-review.md)
@@ -34,11 +35,13 @@ flttxq-skills/
 │   ├── add.js
 │   └── flttxq-skills.js
 ├── docs/
+│   ├── index.md
 │   └── skills/
 │       ├── README.md
 │       ├── app-store-triple-review.md
 │       ├── cross-framework-test-suite.md
 │       ├── polyglot-code-review-expert.md
+│       ├── prompt-examples.md
 │       └── store-submission-docs-cn.md
 ├── README.md
 ├── install.ps1
@@ -73,6 +76,7 @@ flttxq-skills/
 
 请优先阅读：
 
+- [文档首页](D:/Projects/flttxq-skills/docs/index.md)
 - [Skills 文档总览](D:/Projects/flttxq-skills/docs/skills/README.md)
 - [示例提示词库](D:/Projects/flttxq-skills/docs/skills/prompt-examples.md)
 
