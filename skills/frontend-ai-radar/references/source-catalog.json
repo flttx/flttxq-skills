@@ -1,0 +1,94 @@
+{
+  "frontend": [
+    {
+      "name": "Juejin frontend search",
+      "kind": "html",
+      "url": "https://juejin.cn/search?query=%E5%89%8D%E7%AB%AF&type=0"
+    },
+    {
+      "name": "Juejin AI frontend search",
+      "kind": "html",
+      "url": "https://juejin.cn/search?query=AI%20%E5%89%8D%E7%AB%AF&type=0"
+    },
+    {
+      "name": "Zhihu frontend search",
+      "kind": "html",
+      "url": "https://www.zhihu.com/search?type=content&q=%E5%89%8D%E7%AB%AF"
+    },
+    {
+      "name": "X frontend architecture search",
+      "kind": "html",
+      "url": "https://x.com/search?q=frontend%20architecture%20OR%20design%20system%20OR%20three.js%20OR%20webgpu&src=typed_query&f=live"
+    },
+    {
+      "name": "GitHub frontend topic",
+      "kind": "html",
+      "url": "https://github.com/topics/frontend"
+    },
+    {
+      "name": "GitHub threejs topic search",
+      "kind": "json",
+      "url": "https://api.github.com/search/repositories?q=topic:threejs+stars:>20&sort=updated&order=desc"
+    },
+    {
+      "name": "GitHub webgpu topic search",
+      "kind": "json",
+      "url": "https://api.github.com/search/repositories?q=topic:webgpu+stars:>20&sort=updated&order=desc"
+    },
+    {
+      "name": "GitHub frontend topic search",
+      "kind": "json",
+      "url": "https://api.github.com/search/repositories?q=topic:frontend+stars:>50&sort=updated&order=desc"
+    },
+    {
+      "name": "SegmentFault frontend channel",
+      "kind": "html",
+      "url": "https://segmentfault.com/channel/frontend"
+    },
+    {
+      "name": "V2EX JavaScript node",
+      "kind": "html",
+      "url": "https://www.v2ex.com/go/javascript"
+    },
+    {
+      "name": "DEV frontend feed",
+      "kind": "xml",
+      "url": "https://dev.to/feed/tag/frontend"
+    },
+    {
+      "name": "DEV webdev feed",
+      "kind": "xml",
+      "url": "https://dev.to/feed/tag/webdev"
+    },
+    {
+      "name": "Hacker News frontend search",
+      "kind": "json",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?tags=story&query=frontend"
+    },
+    {
+      "name": "Hacker News webgpu search",
+      "kind": "json",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?tags=story&query=webgpu"
+    },
+    {
+      "name": "Reddit frontend feed",
+      "kind": "xml",
+      "url": "https://www.reddit.com/r/frontend/.rss"
+    },
+    {
+      "name": "Reddit webdev feed",
+      "kind": "xml",
+      "url": "https://www.reddit.com/r/webdev/.rss"
+    },
+    {
+      "name": "Chrome for Developers feeds",
+      "kind": "html",
+      "url": "https://developer.chrome.com/feeds"
+    },
+    {
+      "name": "Vercel blog",
+      "kind": "html",
+      "url": "https://vercel.com/blog"
+    }
+  ]
+}

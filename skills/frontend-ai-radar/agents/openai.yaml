@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend AI Radar"
+  short_description: "Curate AI and frontend engineering signals"
+  default_prompt: "Generate a frontend-focused AI engineering radar digest for today."

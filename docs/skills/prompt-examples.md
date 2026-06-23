@@ -58,6 +58,28 @@
 用 cross-framework-test-suite 给这个 React Native 列表页补测试，重点看分页、下拉刷新和空列表状态。
 ```
 
+## frontend-ai-radar
+
+```text
+用 frontend-ai-radar 生成本周前端 AI 技术雷达，重点关注 AI coding agent、构建工具、测试和前端架构治理。
+```
+
+```text
+用 frontend-ai-radar 收集最近 24 小时的高信号前端工程内容，输出中文摘要、来源链接和对团队实践的启发。
+```
+
+```text
+用 frontend-ai-radar 跟踪 GitHub 和官方前端博客里的工具链变化，重点看 CI、性能、测试和 DX。
+```
+
+```text
+用 frontend-ai-radar 做一份面向前端架构负责人的周报，只保留有工程实践价值的内容，每条都给出来源、为什么重要、团队可以怎么用。
+```
+
+```text
+用 frontend-ai-radar 分析最近的 WebGL、Three.js 和 WebGPU 前端信号，整理成架构决策和 Codex agent 工作流建议。
+```
+
 ## polyglot-code-review-expert
 
 ```text

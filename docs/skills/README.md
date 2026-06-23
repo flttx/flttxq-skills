@@ -35,6 +35,7 @@
 | --- | --- | --- | --- |
 | `app-store-triple-review` | 三端应用商店合规预审 | 源码、安装包、权限/隐私/账号信息 | 分平台风险结论、关键操作记录、提审建议 |
 | `cross-framework-test-suite` | 跨框架补单测/集成测试 | 目标模块、现有测试规范、仓库测试栈 | 新增测试文件、执行结果、剩余风险 |
+| `frontend-ai-radar` | AI + 前端工程技术雷达 | 时间范围、关注方向、公开来源或默认来源目录 | 中文技术雷达、来源链接、架构/管理/agent 启发 |
 | `polyglot-code-review-expert` | 带项目规范感知的代码审查 | 当前 diff、目标文件、仓库规范文档 | 问题列表、风险说明、验证建议 |
 | `store-submission-docs-cn` | 应用商店提审文案与材料整理 | 版本变更、权限用途、截图/审核路径信息 | 可直接粘贴的提审文案、备注、版本说明 |
 
@@ -42,6 +43,7 @@
 
 - [app-store-triple-review](D:/Projects/flttxq-skills/docs/skills/app-store-triple-review.md)
 - [cross-framework-test-suite](D:/Projects/flttxq-skills/docs/skills/cross-framework-test-suite.md)
+- [frontend-ai-radar](D:/Projects/flttxq-skills/docs/skills/frontend-ai-radar.md)
 - [polyglot-code-review-expert](D:/Projects/flttxq-skills/docs/skills/polyglot-code-review-expert.md)
 - [store-submission-docs-cn](D:/Projects/flttxq-skills/docs/skills/store-submission-docs-cn.md)
 - [示例提示词库](D:/Projects/flttxq-skills/docs/skills/prompt-examples.md)

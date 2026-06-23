@@ -1,7 +1,11 @@
 {
   "name": "flttxq-skills",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "用于安装和分发自定义全局 skills 的命令行工具。",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "flttxq-skills": "./bin/flttxq-skills.js",
     "add": "./bin/add.js"
@@ -23,6 +27,8 @@
     "check:platforms": "node ./bin/flttxq-skills.js --list-platforms"
   },
   "keywords": [
+    "npx",
+    "npm",
     "skills",
     "codex",
     "cli"

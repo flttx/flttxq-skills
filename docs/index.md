@@ -38,6 +38,7 @@
 
 - [app-store-triple-review](D:/Projects/flttxq-skills/docs/skills/app-store-triple-review.md)
 - [cross-framework-test-suite](D:/Projects/flttxq-skills/docs/skills/cross-framework-test-suite.md)
+- [frontend-ai-radar](D:/Projects/flttxq-skills/docs/skills/frontend-ai-radar.md)
 - [polyglot-code-review-expert](D:/Projects/flttxq-skills/docs/skills/polyglot-code-review-expert.md)
 - [store-submission-docs-cn](D:/Projects/flttxq-skills/docs/skills/store-submission-docs-cn.md)
 

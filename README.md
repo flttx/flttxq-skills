@@ -13,6 +13,7 @@
 
 - `app-store-triple-review`
 - `cross-framework-test-suite`
+- `frontend-ai-radar`
 - `polyglot-code-review-expert`
 - `store-submission-docs-cn`
 
@@ -23,6 +24,7 @@
 - [示例提示词库](D:/Projects/flttxq-skills/docs/skills/prompt-examples.md)
 - [app-store-triple-review](D:/Projects/flttxq-skills/docs/skills/app-store-triple-review.md)
 - [cross-framework-test-suite](D:/Projects/flttxq-skills/docs/skills/cross-framework-test-suite.md)
+- [frontend-ai-radar](D:/Projects/flttxq-skills/docs/skills/frontend-ai-radar.md)
 - [polyglot-code-review-expert](D:/Projects/flttxq-skills/docs/skills/polyglot-code-review-expert.md)
 - [store-submission-docs-cn](D:/Projects/flttxq-skills/docs/skills/store-submission-docs-cn.md)
 
@@ -40,6 +42,7 @@ flttxq-skills/
 │       ├── README.md
 │       ├── app-store-triple-review.md
 │       ├── cross-framework-test-suite.md
+│       ├── frontend-ai-radar.md
 │       ├── polyglot-code-review-expert.md
 │       ├── prompt-examples.md
 │       └── store-submission-docs-cn.md
@@ -52,6 +55,7 @@ flttxq-skills/
 └── skills/
     ├── app-store-triple-review/
     ├── cross-framework-test-suite/
+    ├── frontend-ai-radar/
     ├── polyglot-code-review-expert/
     └── store-submission-docs-cn/
 ```
@@ -122,14 +126,14 @@ npx flttxq-skills add polyglot-code-review-expert --platform codex --yes
 包内额外暴露了 `add` 这个 bin，适合在以下形式里使用：
 
 ```bash
-npm exec --package flttxq-skills add polyglot-code-review-expert -- --platform codex --yes
+npx flttxq-skills add polyglot-code-review-expert --platform codex --yes
 ```
 
 说明：
 
 - 我们已经提供了 `add` 命令入口
-- 但**裸 `npx add <skill>` 是否命中本包，不由仓库本身决定，而由 npm 对包名/命令名的解析规则决定**
-- 因此，稳定可依赖的官方入口仍然建议使用 `npx flttxq-skills add <skill>`
+- 稳定可依赖的官方入口就是 `npx flttxq-skills` 和 `npx flttxq-skills add <skill>`
+- 不再建议使用 `npx add <skill>` 这类歧义命令
 
 ## 本地运行方式
 
@@ -221,4 +225,13 @@ node scripts/install.js add polyglot-code-review-expert --platform codex --yes
 
 1. 补充 npm 包发布信息
 2. 确认 `package.json.name` 与 npm 上的可用包名一致
-3. 发布后再验证一次 `npx flttxq-skills` 与 `npm exec --package flttxq-skills add ...`
+3. 发布后再验证一次 `npx flttxq-skills` 与 `npx flttxq-skills add ...`
+
+## 发布状态
+
+当前仓库已按 `npx flttxq-skills` 的正式发布口径整理：
+
+- 包名：`flttxq-skills`
+- 入口：`npx flttxq-skills`
+- 子命令：`npx flttxq-skills add <skill>`
+- npm 发布模式：公开包
